@@ -6,9 +6,27 @@ public class Account {
     private long balance;
 
     public String getName() {
-            return name;
-        }
+        return name;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getAccNumber() {
+        return accNumber;
+    }
+
+    public void setAccNumber (String accNumber) {
+        this.accNumber = accNumber;
+    }
+
 }
