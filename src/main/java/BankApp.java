@@ -6,6 +6,14 @@ public class BankApp {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome in our bank!");
+        System.out.println("How much users You want to register?");
+        int usersAmount = scanner.nextInt();
+        Account newUsersTable[] = new Account[usersAmount];
+        for (int i = 0; i < newUsersTable.length; i++) {
+            newUsersTable[i] = new Account();
+          newUsersTable[i].createAccount();
+          newUsersTable[i].showAccount();
+        }
         Account account = new Account();
         account.createAccount();
 
