@@ -67,4 +67,16 @@ public class Account {
         balance = balance + amount;
         System.out.println("Your current balance is: " + balance + " PLN.");
     }
+
+    public void takeMoney() {
+        System.out.print("How much You want to take?: ");
+        long amount = scanner.nextLong();
+
+        if (balance >= amount) {
+            balance = balance - amount;
+            System.out.println("Your current amount is: " + balance);
+        } else {
+            System.out.println("Your current balance is less than " + amount + " PLN. You have: " + balance + " PLN.");
+        }
+    }
 }
