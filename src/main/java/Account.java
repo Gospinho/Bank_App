@@ -54,4 +54,17 @@ public class Account {
         System.out.print("Enter Your balance: ");
         balance = scanner.nextLong();
     }
+
+    public void showAccount() {
+        System.out.println("Account owner: " + name + " " + surname);
+        System.out.println("Account number: " + accNumber);
+        System.out.println("Balance: " + balance);
+    }
+
+    public void depositMoney() {
+        System.out.print("How much You want to deposit?: ");
+        long amount = scanner.nextLong();
+        balance = balance + amount;
+        System.out.println("Your current balance is: " + balance + " PLN.");
+    }
 }
