@@ -79,4 +79,13 @@ public class Account {
             System.out.println("Your current balance is less than " + amount + " PLN. You have: " + balance + " PLN.");
         }
     }
+
+    public boolean search(String accountNumber) {
+        if (accNumber.equals(accountNumber)) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
 }
